@@ -195,10 +195,12 @@
     }
   });
 
-  // ========== LEAFLET MAP ==========
+  // map 
+ // ========== LEAFLET MAP ==========
   const mapContainer = document.getElementById('map');
-if (mapContainer && typeof L !== 'undefined') {
-    const map = L.map('map').setView([-26.2041, 28.0473], 12);
+  if (mapContainer && typeof L !== 'undefined') {
+    // Pretoria coordinates
+    const map = L.map('map').setView([-25.7479, 28.2293], 12);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -210,28 +212,27 @@ if (mapContainer && typeof L !== 'undefined') {
       html: `<div style="background:#0A4D68; color:white; width:36px; height:36px; 
                         border-radius:50%; display:flex; align-items:center; 
                         justify-content:center; font-size:18px; border:3px solid white;
-                        box-shadow:0 2px 8px rgba(0,0,0,0.3);">🧹</div>`,
+                        box-shadow:0 2px 8px rgba(0,0,0,0.3);"></div>`,
       iconSize: [36, 36],
       iconAnchor: [18, 18]
     });
 
-    L.marker([-26.2041, 28.0473], { icon: mainIcon })
+    L.marker([-25.7479, 28.2293], { icon: mainIcon })
       .addTo(map)
       .bindPopup(`
         <strong>Hakeem's Ready Set Clean Services</strong><br>
-        Pretoria Mamelodi, Gauteng<br>
-        Serving the greater Johannesburg area
+        Pretoria, Gauteng<br>
+        Serving the greater Pretoria area
       `)
       .openPopup();
 
-    L.circle([-26.2041, 28.0473], {
+    L.circle([-25.7479, 28.2293], {
       color: '#00A896',
       fillColor: '#00A896',
       fillOpacity: 0.15,
       radius: 15000
     }).addTo(map).bindPopup('Our main service coverage area');
   }
-
   // validating forms 
   function showError(input, message) {
     const formGroup = input.closest('.form-group');
