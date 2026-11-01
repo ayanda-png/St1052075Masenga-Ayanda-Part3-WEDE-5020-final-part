@@ -1,6 +1,6 @@
 
 :root {
-  --primary: #0A4D68;
+  --primary: #1b607b;
   --primary-dark: #083A4F;
   --primary-light: #1A6B8A;
   --accent: #00A896;
@@ -308,7 +308,7 @@ p {
 .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(0, 168, 150, 0.3);
+  border-color: rgba(21, 121, 183, 0.375);
 }
 
 .feature-icon {
