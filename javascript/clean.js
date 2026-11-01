@@ -199,7 +199,7 @@
  
   const mapContainer = document.getElementById('map');
   if (mapContainer && typeof L !== 'undefined') {
-    // Pretoria coordinates
+    // Pretoria coordinates // got the co ordinates on openstreetmap 
     const map = L.map('map').setView([-25.7479, 28.2293], 12);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -212,7 +212,7 @@
       html: `<div style="background:#0A4D68; color:white; width:36px; height:36px; 
                         border-radius:50%; display:flex; align-items:center; 
                         justify-content:center; font-size:18px; border:3px solid white;
-                        box-shadow:0 2px 8px rgba(0,0,0,0.3);"></div>`,
+                        box-shadow:0 2px 8px rgba(231, 17, 17, 0.3);"></div>`,
       iconSize: [36, 36],
       iconAnchor: [18, 18]
     });
