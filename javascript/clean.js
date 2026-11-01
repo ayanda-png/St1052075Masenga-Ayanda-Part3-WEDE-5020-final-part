@@ -375,13 +375,11 @@
           }
           submitBtn.textContent = originalText;
           submitBtn.disabled = false;
-          /* ========================================
-   Hakeem's Ready Set Clean Services
-   Main JavaScript - Part 3 Functionality
-======================================== */
+          
+// Adding Functionality
 
 document.addEventListener('DOMContentLoaded', function () {
-  // ========== MOBILE MENU ==========
+  // Cell phone menu 
   const hamburger = document.querySelector('.hamburger');
   const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -411,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ========== ACCORDION ==========
+  // Accordations
   const accordionHeaders = document.querySelectorAll('.accordion-header');
 
   accordionHeaders.forEach(header => {
@@ -432,7 +430,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // ========== TABS ==========
+  // Adding Tabs 
   const tabButtons = document.querySelectorAll('.tab-btn');
   const tabContents = document.querySelectorAll('.tab-content');
 
@@ -451,7 +449,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // ========== SERVICE FILTER / SEARCH ==========
+  // Adding service search 
   const searchInput = document.getElementById('serviceSearch');
   const filterButtons = document.querySelectorAll('.filter-btn');
   const serviceCards = document.querySelectorAll('.service-card');
@@ -467,7 +465,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const cardCategory = card.dataset.category || '';
 
       const matchesSearch = title.includes(searchTerm) || description.includes(searchTerm);
-      const matchesCategory = category === 'all' || cardCategory === category;
+      const matchesCategory = category == 'all' || cardCategory == category;
 
       if (matchesSearch && matchesCategory) {
         card.style.display = 'block';
@@ -503,8 +501,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   galleryItems.forEach((item, index) => {
     galleryImages.push({
-      emoji: item.textContent.trim() || '🧹',
-      title: item.dataset.title || `Cleaning Project ${index + 1}`
+      emoji: item.textContent.trim() || '',
+      title: item.dataset.title || `Cleaning Project {index + 1}`
     });
 
     item.addEventListener('click', () => {
