@@ -106,7 +106,7 @@
     });
   });
 
-  // ========== GALLERY LIGHTBOX ==========
+  // gallery box
   const galleryItems = document.querySelectorAll('.gallery-item');
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
@@ -119,7 +119,7 @@
 
   galleryItems.forEach((item, index) => {
     galleryImages.push({
-      emoji: item.textContent.trim() || '🧹',
+      emoji: item.textContent.trim() || '',
       title: item.dataset.title || Cleaning Project ${index + 1}
     });
 
@@ -271,7 +271,7 @@
     return /^(\+27|0)[6-8][0-9]{8}$/.test(cleaned) || /^0[0-9]{9}$/.test(cleaned);
   }
 
-  // ===== ENQUIRY FORM =====
+  // enquiry form
   const enquiryForm = document.getElementById('enquiryForm');
   if (enquiryForm) {
     enquiryForm.addEventListener('submit', function (e) {
@@ -328,7 +328,7 @@
       }
 
       if (message.value.trim().length > 0 && message.value.trim().length < 10) {
-        showError(message, 'Message should be at least 10 characters if provided.');
+        showError(message, 'Message must  be at least 10 characters if provided.');
         isValid = false;
       } else {
         clearValidation(message);
@@ -354,7 +354,7 @@
 
         const submitBtn = enquiryForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Sending...';
+        submitBtn.textContent = 'Sending..';
         submitBtn.disabled = true;
 
         setTimeout(() => {
