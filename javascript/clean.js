@@ -27,7 +27,7 @@
     });
   }
 
-  // ========== ACCORDION ==========
+  // Setting the accordions 
   const accordionHeaders = document.querySelectorAll('.accordion-header');
 
   accordionHeaders.forEach(header => {
@@ -48,7 +48,7 @@
     });
   });
 
-  // ========== TABS ==========
+  // avaible Tabs 
   const tabButtons = document.querySelectorAll('.tab-btn');
   const tabContents = document.querySelectorAll('.tab-content');
 
@@ -67,7 +67,7 @@
     });
   });
 
-  // ========== SERVICE FILTER / SEARCH ==========
+  // Service check 
   const searchInput = document.getElementById('serviceSearch');
   const filterButtons = document.querySelectorAll('.filter-btn');
   const serviceCards = document.querySelectorAll('.service-card');
@@ -196,7 +196,7 @@
   });
 
   // map 
- // ========== LEAFLET MAP ==========
+ 
   const mapContainer = document.getElementById('map');
   if (mapContainer && typeof L !== 'undefined') {
     // Pretoria coordinates
