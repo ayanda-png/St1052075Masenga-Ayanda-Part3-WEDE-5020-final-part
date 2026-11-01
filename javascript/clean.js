@@ -219,7 +219,7 @@ if (mapContainer && typeof L !== 'undefined') {
       .addTo(map)
       .bindPopup(`
         <strong>Hakeem's Ready Set Clean Services</strong><br>
-        Johannesburg, Gauteng<br>
+        Pretoria Mamelodi, Gauteng<br>
         Serving the greater Johannesburg area
       `)
       .openPopup();
