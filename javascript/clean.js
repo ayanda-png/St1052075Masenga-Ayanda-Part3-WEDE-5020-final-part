@@ -652,7 +652,7 @@ document.addEventListener('DOMContentLoaded', function () {
     return /^(\+27|0)[6-8][0-9]{8}$/.test(cleaned) || /^0[0-9]{9}$/.test(cleaned);
   }
 
-  // ===== ENQUIRY FORM =====
+  // enquiry form
   const enquiryForm = document.getElementById('enquiryForm');
   if (enquiryForm) {
     enquiryForm.addEventListener('submit', function (e) {
@@ -784,7 +784,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ===== CONTACT FORM =====
+  // contact form
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
@@ -868,7 +868,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ========== SMOOTH SCROLL ==========
+  // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
@@ -881,7 +881,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // ========== ACTIVE NAV LINK ==========
+  // Navigation Link
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
     const href = link.getAttribute('href');
@@ -890,7 +890,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // ========== ANIMATION ON SCROLL ==========
+  // Animation scroll
   const observerOptions = {
     threshold: 0.15,
     rootMargin: '0px 0px -50px 0px'
