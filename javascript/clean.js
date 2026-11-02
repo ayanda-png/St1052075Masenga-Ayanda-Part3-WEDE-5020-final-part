@@ -625,7 +625,7 @@ if (mapContainer && typeof L !== 'undefined') {
     }).addTo(map).bindPopup('Our main service coverage area');
   }
 
-  // ========== FORM VALIDATION ==========
+  //  FORM VALIDATION 
   function showError(input, message) {
     const formGroup = input.closest('.form-group');
     const errorEl = formGroup.querySelector('.error-message');
