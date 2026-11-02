@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hakeemsreadyclean.netlify.app/sitemap.xml
+Sitemap: https://ayanda-png.github.io/St1052075Masenga-Ayanda-Part3-WEDE-5020-final-part/
