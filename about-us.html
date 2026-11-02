@@ -1,53 +1,114 @@
 <!DOCTYPE html>
-<html>
-  <head>
-<link rel="stylesheet" href="style.css">
-
-     <title>About US </title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us & Enquiry | Hakeem's Ready Set Clean</title>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-<header>
-    <h2>About Us</h2><nav>
-    <a href="index.html">Home Page</a>
-    <a href="Donation.html">Donation Page</a>
-    <a href="contact.html"></a> 
 
-    </nav>
-   
-</header>
-
-<H1>Information about who we are</H1>
-<p> Hakeem's readyset clean is a small business hailing from Mamelodi it was founded 
-in 2025 by Hakeem khoza a young entrepreneur who is also from Mamelodi this business is 
-about cleaning it offers cleaning services from cleaning homes ,offices Schools and Apartments 
-the services are cheap and affordable
-</p>
   
-<section>
-<h2>Our Company Values</h2>
-   <ul>
-   <li>We are an Honest Company</li>
-   <li>We value respect from both parties</li>
-   <li>Team work is part is part of strong suit</li>
+  <header>
+    <div class="container">
+      <h2>Hakeem's Ready Set Clean</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact / Enquiry</a>
+      </nav>
+    </div>
+  </header>
 
-   </ul>
+  
+  <section class="about-section">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>
+        <strong>Hakeem's Ready Set Clean</strong> is a small business from <strong>Mamelodi</strong>. 
+        It was founded in 2025 by <strong>Hakeem Khoza</strong>, a young entrepreneur who is also from Mamelodi.
+      </p>
+      <p>
+        The business specialises in professional cleaning services for homes, offices, schools and apartments. 
+        We offer affordable and reliable cleaning that people can trust.
+      </p>
 
-</section>
+      <h2>Our Company Values</h2>
+      <ul class="values-list">
+        <li>We are an honest company</li>
+        <li>We value respect from both parties</li>
+        <li>Teamwork is one of our strongest points</li>
+      </ul>
 
-<section>
-<img src="Images/free.jpg" alt="" width="300" height="200">
+      
+      <div class="about-images">
+        <img src="Images/free.jpg" alt="Cleaning team at work" width="300">
+        <img src="Images/lol.jpg" alt="Clean space" width="300">
+      </div>
+    </div>
+  </section>
 
-<img src="Images/lol.jpg"alt="picture here" width="300"height="300"
- </section>
+  
+  <section class="enquiry-section">
+    <div class="container">
+      <h2>Make an Enquiry / Request a Quote</h2>
+      <p>Fill in the form below and we will contact you as soon as possible.</p>
 
- <script src="js/clean.js"></script>
+      
+      <div id="enquirySuccess" class="form-success" style="display: none;">
+        <h3> Thank you! Your enquiry has been received.</h3>
+        <p>We will contact you within 24 hours.</p>
+      </div>
+
+      
+      <form id="enquiryForm" class="enquiry-form">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="e.g. 082 123 4567">
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Needed *</label>
+          <select id="service" name="service" required>
+            <option value="">-- Select a service --</option>
+            <option value="Home Cleaning">Home Cleaning</option>
+            <option value="Office Cleaning">Office Cleaning</option>
+            <option value="School Cleaning">School Cleaning</option>
+            <option value="Apartment Cleaning">Apartment Cleaning</option>
+            <option value="Deep Cleaning">Deep Cleaning</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Additional Details</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us more about what you need..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Enquiry</button>
+      </form>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Hakeem's Ready Set Clean | Mamelodi, Pretoria</p>
+    </div>
+  </footer>
+
+  <script src="js/clean.js"></script>
 </body>
-
-</header>
-
-  
-
-
-
-
-</html> 
+</html>
