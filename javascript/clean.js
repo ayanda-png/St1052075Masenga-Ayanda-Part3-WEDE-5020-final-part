@@ -579,8 +579,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Leaflet Map of Pretoria
-   // ========== LEAFLET MAP (Pretoria) ==========
-const mapContainer = document.getElementById('map');
+   const mapContainer = document.getElementById('map');
 if (mapContainer && typeof L !== 'undefined') {
   // Pretoria coordinates
   const map = L.map('map').setView([-25.7479, 28.2293], 12);
@@ -607,7 +606,6 @@ if (mapContainer && typeof L !== 'undefined') {
       Pretoria, Gauteng<br>
       Serving the greater Pretoria area
     `)
-    .openPopup();
 
   // Service area circle
   L.circle([-25.7479, 28.2293], {
