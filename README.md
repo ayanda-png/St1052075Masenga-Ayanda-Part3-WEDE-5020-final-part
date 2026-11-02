@@ -10,4 +10,6 @@ i also added social  media sections
  google scholar
  Continuing with this project as i finish it a learned a lot on designing websites also learned new words and what they are for like the word Accordion is that its a type of interactive section on a website and that it looks like a list of headings when click on it opens and shows more information 
  i have made some improvements from my part 2 using the feedback i got i have made a lot of commits compared to my part 1 and 2 here is a screenshot of the it being mobile friendly <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/c69c04c6-7c98-442e-a794-275f758d53b7" />
-
+im struggling to make my map appear on the website 
+My search engine optimization has proper title tags , robots file and a sitemap file a mobile friendly design with descriptive alt text for images 
+since i dint have a separate  enquiry page i have merged the enquiry section with my About page to clients can fill an enquiry or get a quote the  
